@@ -136,7 +136,6 @@
             if (entry) await scanDirectory(entry);
         }
 
-        // Build new DataTransfer object
         const newData = new DataTransfer();
         allFiles.forEach(f => newData.items.add(f));
         fileInput.files = newData.files;
